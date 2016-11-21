@@ -47,7 +47,7 @@ $BLOCKING = getenv('BLOCKING') !== FALSE;
 
 $interval = 5;
 $INTERVAL = getenv('INTERVAL');
-if (!empty($INTERVAL)) {
+if (!empty($INTERVAL) || $INTERVAL === '0') {
     $interval = $INTERVAL;
 }
 
